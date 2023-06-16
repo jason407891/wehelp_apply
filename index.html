@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!--文件型態-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Wehelp申請_林孟達</title> <!--網頁標題-->
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+    </head>
+	<body><!--置頂選單-->
+		<h3 class="h3">About me - 林孟達</h3>
+        <div class="titlediv">
+            <button class="title" onclick="change(1)">個人簡介</button>
+            <button class="title" onclick="change(2)">專案作品</button>
+            <button class="title" onclick="change(3)">市場職缺資訊</button>
+            <button class="title" onclick="change(4)">解決問題方式</button>
+        </div>
+        <!-- 個人簡介 -->
+        <div class="content" id="content1" style="display:none">
+            <div class="content_title">兩百字內的個人簡介。</div>
+            <div class="content_content">
+                我是林孟達，目前25歲，畢業於東吳大學，主修國貿並輔修資管系，</br>
+                曾經在蝦皮購物的QA部門工作一年，目前在品大科技電商部門擔任業務約一年，主要業務範圍為電子零件的線上/線下貿易商，</br>
+                我對於程式非常有熱忱，也善於將技能實現在商業邏輯上，串聯不同領域的內容，</br>
+                希望能藉由這個機會，增強自己的實力，並有效率的學習前後端及資料庫的專業知識。
+            </div>
+            <div class="content_title">如果參與這個計畫，會怎麼安排學習時間？</div>
+            <div class="content_content">
+                向公司申請參與每周一10:00專案討論</br>
+                平日一至五: 18:30~22:30 學習 4hr，平日共20小時/周</br>
+                周六及周日: 9:00~19:00 學習 10hr，假日共20小時/周</br></br>
+                總共安排學習時間: 預計至少40小時/周，依照實際進度調整，對自己負責
+            </div>
+        </div>
+        <!-- 專案作品 -->
+        <div class="content" id="content2" style="display:none">
+            <div class="content_title">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</div>
+            <div class="content_content">
+                輔修資管系，參與共312小時數據工程師課程，學習python、power bi、樹莓派、資料庫，</br>
+                擔任QA工作中，使用postman、ubuntu等工具操作api及撈container log資料，閱讀PRD及撰寫test case
+            </div>
+            <div class="project">LineBot爬蟲串接</div>
+                <div class="content_content">簡介: 用beautiful soup套件爬取電子零件比價網資訊，使用flask套件並串聯send msg api，用git控制版本，heroku工具部署，達成line自動報價的功能</div>
+            <div class="project">自動發郵件tool</div>
+                <div class="content_content">簡介: 用python串接outlook及excel，用jinja2模板設計變數/html檔案並且自動發送給excel中指定稱謂+信箱</div>
+            <div class="project">JIRA撈單</div>
+                <div class="content_content">簡介: 在蝦皮當QA時，串接jira以及公司通訊軟體，將每周regression test出現的bug ticket撈出並且整理至群組中</div>
+            <div class="project">小型網頁</div>
+                <div class="content_content">簡介: 在看Youtube影片學習過程中，試著將需求功能做成小型網頁，連結前端後端資料庫，並提供搜尋功能，未來會持續優化並製作成實用的side project</div>
+        </div>
+        <!-- 市場職缺 -->
+        <div class="content" id="content3" style="display:none">
+            <div class="content_title">是否有想要加入的軟體公司？為什麼想加入該公司？</div>
+            <div class="content_content">
+                目標是優化目前公司(品大科技有限公司)電商的網站，自己串接金流(紅陽/paypal)、設定物流狀態，切換國家語言，會員、購物車功能，</br>
+                完成網頁爬蟲及資料庫的串接，掌握全端的網頁內容，</br>
+                原因是希望可以掌控更多技術面的工作內容，實現業務上需求。
+            </div>
+            <div class="content_title">其他想要對我們說的事情？</div>
+            <div class="content_content">
+                一開始從Youtube上面的教學影片認識貴單位，認為老師講解的內容清晰明瞭，</br>
+                期許在高壓環境下，半年內接手網站實務並持續優化。
+            </div>    
+        </div>
+        <!-- 解決問題-->
+        <div class="content" id="content4" style="display:none">
+            <div class="content_title">請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</div>
+            <div class="content_content">
+                如公司業績壓力大的時候，會產生負面情緒，會利用空閒時間運動以抒發壓力，</br>
+                而解決問題面，會透過內部討論，客戶反饋，持續優化自身產品力，找到並解決問題，繼續往前走。
+            </div>
+            <div class="content_title">關於這份申請網頁，請分享一個你開發時的技術心得。</div>
+            <div class="content_content">
+                製作這份網頁的過程中有發想，建立一個跟現在工作相關的網頁，參考後端Flask及資料庫MongoDB的教學，製作了一個簡單的網站，覺得非常有成就感，</br>過程有透過Youtube學習的筆記及Chat GPT和Google Search，不斷學習新的知識，</br>
+                認為網站製作的排程及規格的設計，還需要更具體的規畫出來，也希望後續優化後能夠真正上線在公司內部做使用。
+            </div>
+        </div>
+          
+    <script>
+        //切換頁面
+          function change(num){
+            let divall=document.querySelectorAll(".content");
+            divall[0].style.display="none"
+            divall[1].style.display="none"
+            divall[2].style.display="none"
+            divall[3].style.display="none"
+            divElm=document.querySelector("#content"+num);
+            divElm.style.display="block"
+            }
+    </script>
+	</body>
+</html>
