@@ -1,0 +1,23 @@
+.frame{display:flex;}
+.content{
+	background-color:red;
+	flex:none;
+	width:25%
+}
+.list{display:flex;
+	  padding: 20px;
+	  justify-content:center;
+
+}
+.title{
+	background-color:white;
+	border:1px solid black;
+	padding: 10px;
+	margin:10px;
+	flex:none;
+	width:100px;
+}
+.solution{
+	background-color: white;
+	font-weight:bold;
+}
